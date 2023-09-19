@@ -1,0 +1,22 @@
+/* index.css */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .contact-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .contact-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  

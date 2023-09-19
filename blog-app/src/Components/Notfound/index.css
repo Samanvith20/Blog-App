@@ -1,0 +1,15 @@
+/* index.css */
+
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .not-found-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
