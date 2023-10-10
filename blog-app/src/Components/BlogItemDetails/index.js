@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import Loader from 'react-loader-spinner';
-
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import './index.css';
+import { useParams } from 'react-router-dom';
 
 const BlogItemDetails = () => {
   const { id } = useParams();
@@ -18,6 +17,7 @@ const BlogItemDetails = () => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
+
         const updatedData = {
           title: data.title,
           imageUrl: data.image_url,
@@ -28,7 +28,7 @@ const BlogItemDetails = () => {
         setBlogData(updatedData);
         setIsLoading(false);
       } catch (error) {
-        console.error('Error fetching blog data:', error);
+        console.error('Error fetching data:', error);
         setIsLoading(false);
       }
     };
